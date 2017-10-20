@@ -4,9 +4,9 @@ var app = express();
 
 var PORT = process.env.PORT ||  8080;
 
-app.get('/', function(req, res)
+app.get('/home', function(req, res)
 {
-    res.json('Hello to the base');
+    res.json('Hello to the base again');
 })
 
 app.listen(PORT, function () {
