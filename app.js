@@ -13,6 +13,6 @@ app.get('/home', function(req, res)
     res.json('Hello to the base again');
 })
 
-app.listen(PORT, function () {
+app.listen(process.env.PORT ||  8080, function () {
     console.log('We are now live');
 })
